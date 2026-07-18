@@ -1,0 +1,3 @@
+"""
+AtlasDM core module package.
+"""

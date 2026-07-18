@@ -1,0 +1,3 @@
+"""
+AtlasDM resources module package.
+"""

@@ -1,0 +1,3 @@
+"""
+AtlasDM widgets module package.
+"""

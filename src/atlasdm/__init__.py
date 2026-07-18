@@ -1,0 +1,3 @@
+"""
+AtlasDM application core package.
+"""

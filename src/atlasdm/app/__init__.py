@@ -1,0 +1,3 @@
+"""
+AtlasDM app module package.
+"""
