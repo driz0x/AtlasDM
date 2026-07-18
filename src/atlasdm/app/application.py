@@ -4,6 +4,12 @@ Application module for AtlasDM.
 
 from PySide6.QtWidgets import QApplication
 
+from atlasdm.core.constants import (
+    APP_NAME,
+    APP_VERSION,
+    ORGANIZATION_DOMAIN,
+    ORGANIZATION_NAME,
+)
 from atlasdm.ui.main_window import MainWindow
 
 
@@ -20,11 +26,11 @@ class AtlasDMApplication:
             argv: Command line arguments.
         """
         self._app = QApplication(argv)
-        self._app.setApplicationName("AtlasDM")
-        self._app.setOrganizationName("driz0x")
-        self._app.setOrganizationDomain("github.com/driz0x")
-        self._app.setApplicationVersion("0.1.0")
-        
+        self._app.setApplicationName(APP_NAME)
+        self._app.setOrganizationName(ORGANIZATION_NAME)
+        self._app.setOrganizationDomain(ORGANIZATION_DOMAIN)
+        self._app.setApplicationVersion(APP_VERSION)
+
         self._main_window = MainWindow()
 
     def run(self) -> int:
