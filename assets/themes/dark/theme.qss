@@ -1,0 +1,10 @@
+/* AtlasDM Dark Theme */
+QMainWindow {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+QWidget {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}

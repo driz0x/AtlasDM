@@ -10,6 +10,7 @@ from atlasdm.core.constants import (
     ORGANIZATION_DOMAIN,
     ORGANIZATION_NAME,
 )
+from atlasdm.themes.manager import ThemeManager
 from atlasdm.ui.main_window import MainWindow
 
 
@@ -30,6 +31,9 @@ class AtlasDMApplication:
         self._app.setOrganizationName(ORGANIZATION_NAME)
         self._app.setOrganizationDomain(ORGANIZATION_DOMAIN)
         self._app.setApplicationVersion(APP_VERSION)
+
+        self._theme_manager = ThemeManager()
+        self._theme_manager.load()
 
         self._main_window = MainWindow()
 

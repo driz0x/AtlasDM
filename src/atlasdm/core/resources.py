@@ -51,3 +51,8 @@ class ResourceManager:
             The resolved path to the stylesheet.
         """
         return self._path_manager.assets_dir / "styles" / name
+
+    def theme(self, name: str) -> Path:
+        """Return the path to a theme stylesheet."""
+
+        return self._path_manager.assets_dir / "themes" / name / "theme.qss"
