@@ -2,9 +2,10 @@
 Main window module for AtlasDM.
 """
 
-from PySide6.QtWidgets import QHBoxLayout, QMainWindow, QStatusBar, QToolBar, QWidget
+from PySide6.QtWidgets import QHBoxLayout, QMainWindow, QStatusBar, QWidget
 
 from atlasdm.ui.widgets.sidebar import Sidebar
+from atlasdm.ui.widgets.toolbar import Toolbar
 
 
 class MainWindow(QMainWindow):
@@ -26,9 +27,8 @@ class MainWindow(QMainWindow):
         """
         Set up the main layout and reserve placeholders.
         """
-        # Toolbar placeholder
-        self._toolbar = QToolBar("Main Toolbar", self)
-        self._toolbar.setObjectName("MainToolbar")
+        # Toolbar
+        self._toolbar = Toolbar(self)
         self.addToolBar(self._toolbar)
 
         # Central widget layout
